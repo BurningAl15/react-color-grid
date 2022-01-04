@@ -5,7 +5,6 @@ const createMatrix = (n, m) => {
   const matrix = [];
 
   const color = "#000000";
-  // const color = "coral";
 
   for (let i = 0; i < n; i++) {
     matrix.push([]);
@@ -16,7 +15,6 @@ const createMatrix = (n, m) => {
 
   return matrix;
 }
-
 
 function App() {
   const [color, setColor] = useState('coral');
@@ -33,10 +31,7 @@ function App() {
         }
       }
     }
-    console.log(matrixCopy)
     setMatrix(matrixCopy)
-
-    // setColor('red');
   }
 
   return (
@@ -67,7 +62,5 @@ function App() {
     </div>
   );
 }
-
-//
 
 export default App;
